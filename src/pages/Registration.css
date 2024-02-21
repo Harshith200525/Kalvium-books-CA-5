@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+.registration-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.registration-container > h1{
+    color: #121212;
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.form-container {
+  width: 35%;
+  height: 85%;
+  margin-top: 10px;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.input-box-container {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box-container > input {
+  width: 100%;
+  height: 75%;
+  padding: 15px;
+  border-radius: 20px;
+  border: 0px;
+  border-bottom: 2px solid plum;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.input-box-container > p {
+  align-self: flex-start;
+  padding-top: 5px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: red;
+}
+
+.submit-btn-container {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn-container > button {
+  width: 55%;
+  height: 60%;
+  cursor: pointer;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.submit-btn-container > button:active{
+    opacity: .5;
+}
+
+.submit-btn-container > button:hover,
+.submit-btn-container > button:active{
+    background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
