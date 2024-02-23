@@ -32,6 +32,7 @@ const MainContent = ({ searchValue }) => {
               <img src={book.imageLinks.thumbnail} alt={book.title} />
               <div className="book-info">
                 <h5>{book.title}</h5>
+                {book.averageRating ? <h6>{book.averageRating}★</h6> : null}
                 <p>*Free</p>
               </div>
             </div>
