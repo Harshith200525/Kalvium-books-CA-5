@@ -6,6 +6,7 @@ const initialState = {
     password: "",
 }
 
+// Logic of the reducer
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case REGISTER:

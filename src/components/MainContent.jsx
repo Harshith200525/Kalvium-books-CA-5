@@ -5,6 +5,7 @@ import "./MainContent.css"
 const MainContent = ({ searchValue }) => {
   const [books, setBooks] = useState([])
 
+  // Fetching the data from the api link
   const fetchData = () => {
     fetch("https://reactnd-books-api.udacity.com/books", {
       headers: { Authorization: "whatever-you-want" },
@@ -15,16 +16,20 @@ const MainContent = ({ searchValue }) => {
       });
   };
 
+  // Staging the data to show
   useEffect(() => {
     fetchData();
   }, []);
 
+  
+  // Filtering the data based on the search value
   const filteredBooks = books.filter((book) =>
     book.title.toLowerCase().includes(searchValue.toLowerCase())
   );
 
   return (
     <div className="main-content">
+    {/* Mapping through the data and showing it */}
       {filteredBooks.map((book) => (
         <div key={book.id} className="book-container">
           <div className="img-container">

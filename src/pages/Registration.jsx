@@ -10,8 +10,8 @@ const Registration = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const navigate = useNavigate();
 
+    // Submitting the user data
     const onSubmit = (data) => {
-        console.log(data)
         store.dispatch(formSubmitted(data))
         navigate(-1)
     }
@@ -19,6 +19,7 @@ const Registration = () => {
     return (
         <div className="registration-container">
             <h1>Create account</h1>
+            {/* Creating the form based on the constraints and given conditions */}
             <div className="form-container">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="input-box-container">

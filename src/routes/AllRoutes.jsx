@@ -3,6 +3,7 @@ import Homepage from "../pages/Homepage"
 import Registration from "../pages/Registration"
 
 const AllRoutes = () => {
+  // Making the routes
   return (
     <Routes>
         <Route path="/" element={<Homepage />} />
